@@ -8,7 +8,7 @@ NC='\033[0m' # No Color
 release=$(lsb_release -c -s)
 
 # Check if the script is running under Ubuntu 18.04 Bionic Beaver
-if [ "$release" != "bionic" ] && [ "$release" != "focal" ] ; then
+if [ "$release" != "bionic" ] && [ "$release" != "focal" ] && [ "$release" != "groovy)" ]  ; then
     >&2 echo -e "${RED}This script is made for Ubuntu 18.04/20.04!${NC}"
     exit 1
 fi
